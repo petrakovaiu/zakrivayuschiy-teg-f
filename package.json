@@ -1,0 +1,14 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Привет!\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.6.2"
+  }
+}

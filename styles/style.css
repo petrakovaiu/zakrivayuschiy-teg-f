@@ -11,6 +11,126 @@
 */
 
 .page {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  flex-direction: column;
+
   min-inline-size: 320px;
-  min-block-size: 100dvb;
+  min-block-size: 500dvb;
+  background:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--main-text-font), sans-serif;
+  font-variation-settings: 410;
+}
+
+.header {
+  /* inline-size: 100vw; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  display: flex;
+  margin: inherit;
+  font-family: "PressStart2P-Regular";
+
+  @media (width <=375px) {
+    inline-size: 100lvw;
+  }
+}
+
+.block-content {
+  max-inline-size: clamp(375px, 100vw, 700px);
+  background-color: var(--bg-cards);
+  border: var(--block-borders);
+}
+
+.logo {
+  display: flex;
+
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 122px;
+  margin: 100px auto;
+  justify-content: center;
+  min-block-size: 370px;
+}
+
+.logo__content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--main-gap) / 2);
+  margin: auto;
+}
+
+.logo__title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.logo__subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  margin: inherit;
+  justify-items: inherit;
+  gap: var(--main-gap);
+}
+
+.card-article {
+}
+
+.card-article__header {
+}
+
+.card-article__wraper {
+}
+
+.card-article__picture {
+  background-size: cover;
+}
+
+.card-article__description {
+}
+
+.card-article__text {
+}
+
+.card-article__buttons-panel {
+}
+
+.heart-icon {
+}
+
+.contour {
+}
+
+.card-article__button {
+}
+
+.footer {
+  display: flex;
+  margin: inherit;
+}
+
+.footer__button {
+}
+
+.icon {
+  width: 100px;
+}
+
+.icon-big {
+  width: 200px;
+  color: red;
+}
+
+.icon-big-xl {
+  width: 500px;
+  color: blue;
 }

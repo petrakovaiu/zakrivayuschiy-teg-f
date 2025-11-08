@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Fonts variables */
+  --main-text-font: "Inter-Variable";
+  --accent-text-font: "PressStart2P-Regular";
+
+  /* Color variables */
+  --background-decor: repeating-linear-gradient(
+    90deg,
+    #d3d3d3,
+    transparent,
+    2px
+  );
+  --bg-cards: #fff;
+  --block-borders: solid 2px #000;
+
+  /* Size variables */
+  --main-gap: 50px;
+  --header-margin: (var(--main-gap) * 2);
+}
