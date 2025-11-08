@@ -15,9 +15,8 @@
   flex-wrap: nowrap;
   margin: 0 auto;
   flex-direction: column;
-
   min-inline-size: 320px;
-  min-block-size: 500dvb;
+  min-block-size: 100dvb;
   background:
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
