@@ -3,6 +3,7 @@
   /* Fonts variables */
   --main-text-font: "Inter-Variable";
   --accent-text-font: "PressStart2P-Regular";
+  --main-text-size: 18px;
 
   /* Color variables */
   --background-decor: repeating-linear-gradient(

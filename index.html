@@ -14,62 +14,123 @@
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
   </head>
   <body class="page">
-    <header class="header ">
+    <header class="header">
       <div class="logo block-content">
         <div class="logo__content">
-      <h1 class="logo__title">&lt;/HTML&gt;</h1>
-      <h2 class="logo__subtitle">Закрывающий тег</h2>
-      </div>
+          <h1 class="logo__title">&lt;/HTML&gt;</h1>
+          <h2 class="logo__subtitle">Закрывающий тег</h2>
+        </div>
       </div>
     </header>
     <main class="content">
+      <!-- 1 карточка -->
       <article class="card-article block-content">
-        <label for="" class="card-article__header">
-          <h3>Фритрек и нулевой спринт: Подготовка к работе</h3>
-        </label>
+        <h3 class="card-article__title">
+          <label for="card-article">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </label>
+        </h3>
         <div class="card-article__wraper">
-          <img src="./images/trailer-image.png" alt="Какой-то текст">
-          <div class="card-article__description">
-          <p class="card-article__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-          <p class="card-article__text">Место для ваших воспоминаний о начале обучения.</p>
-          </div>
-          <div class="card-article__buttons-panel">
-            <!-- <button type="button" class="card-article__heart"> -->
-              <svg class="heart-icon" 
-              width="39" 
-              width="36" 
-              viewBox="0 0 39 36" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true">
-                <!-- Разметка для группировки сердечка-->
-                  <!-- <g class="heart-group"> -->
-                  <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/></path>
-                  <!-- <path class="main-body"></path>
+          <img
+            class="card-article__picture"
+            src="./images/trailer-image.png"
+            alt="Какой-то текст"
+          />
+          <div class="card-article__content">
+            <div class="card-article__description">
+              <p class="card-article__text">
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p class="card-article__text">
+                Место для ваших воспоминаний о начале обучения.
+              </p>
+            </div>
+            <div class="card-article__buttons-panel">
+              <button type="button" class="card__icon-button">
+                <span aria-hidden="true">
+                  <svg
+                    class="like-icon"
+                    height="39"
+                    width="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <!-- Разметка для группировки сердечка-->
+                    <!-- <g class="heart-group"> -->
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="black"
+                    />
+                    <!-- <path class="main-body"></path>
                   <path class="core"></path> -->
-                <!-- </g> -->
-                  <!-- <path class="sparcles" fill="--heart-fill-color"></path> -->
-              </svg>
-            <!-- </button> -->
-              <button type="button" class="card-article__button">Like</button>
-            </button>
+                    <!-- </g> -->
+                    <!-- <path class="sparcles" fill="--heart-fill-color"></path> -->
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="card__like-button classic-button">
+                <span class="button-text">Like</span>
+              </button>
+            </div>
           </div>
         </div>
       </article>
     </main>
     <footer class="footer">
-      <button class="footer__button">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-  <use href="#save-icon"></use>
-</svg>
-Сохранить на память
+      <!-- Save button -->
+      <button
+        type="button"
+        class="footer__save-button classic-button"
+        onclick="window['save-modal'].showModal()"
+        aria-controls="save-modal"
+      >
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          height="21"
+          width="21"
+          viewBox="0 0 39 39"
+        >
+          <use href="#save-icon"></use>
+        </svg>
+        <span class="">Сохранить на память</span>
       </button>
+      <dialog class="modal" id="save-modal">
+        <div class="modal__description">
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="39"
+            width="39"
+            viewBox="0 0 39 39"
+          >
+            <use href="#save-icon"></use>
+          </svg>
+          <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button
+          type="button"
+          class="modal__button classic-button"
+          type="button"
+          onclick="window['save-modal'].close()"
+        >
+          <span class="button-text">Ok</span>
+        </button>
+      </dialog>
     </footer>
-    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="save-icon">
-<path fill="currentColor" d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0zM30 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM21 0v3h-3V0zM18 0v3h-3V0zM15 0v3h-3V0zM12 0v3H9V0zM9 0v3H6V0zM6 0v3H3V0zM36 3v3h-3V3zM9 6v3H6V6zM9 3v3H6V3zM9 9v3H6V9zM30 6v3h-3V6zM30 3v3h-3V3zM30 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM21 12v3h-3v-3zM18 12v3h-3v-3zM15 12v3h-3v-3zM12 12v3H9v-3zM9 12v3H6v-3zM33 21v3h-3v-3zM30 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM21 21v3h-3v-3zM18 21v3h-3v-3zM15 21v3h-3v-3zM12 21v3H9v-3zM9 21v3H6v-3zM33 24v3h-3v-3zM9 24v3H6v-3zM33 27v3h-3v-3zM9 27v3H6v-3zM33 30v3h-3v-3zM9 30v3H6v-3zM9 33v3H6v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3zM30 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM21 36v3h-3v-3zM18 36v3h-3v-3zM15 36v3h-3v-3zM12 36v3H9v-3zM9 36v3H6v-3zM6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"/>
-  </symbol>
-</svg>
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="save-icon">
+        <path
+          fill="currentColor"
+          d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0zM30 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM21 0v3h-3V0zM18 0v3h-3V0zM15 0v3h-3V0zM12 0v3H9V0zM9 0v3H6V0zM6 0v3H3V0zM36 3v3h-3V3zM9 6v3H6V6zM9 3v3H6V3zM9 9v3H6V9zM30 6v3h-3V6zM30 3v3h-3V3zM30 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM21 12v3h-3v-3zM18 12v3h-3v-3zM15 12v3h-3v-3zM12 12v3H9v-3zM9 12v3H6v-3zM33 21v3h-3v-3zM30 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM21 21v3h-3v-3zM18 21v3h-3v-3zM15 21v3h-3v-3zM12 21v3H9v-3zM9 21v3H6v-3zM33 24v3h-3v-3zM9 24v3H6v-3zM33 27v3h-3v-3zM9 27v3H6v-3zM33 30v3h-3v-3zM9 30v3H6v-3zM9 33v3H6v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3zM30 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM21 36v3h-3v-3zM18 36v3h-3v-3zM15 36v3h-3v-3zM12 36v3H9v-3zM9 36v3H6v-3zM6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"
+        />
+      </symbol>
+    </svg>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
