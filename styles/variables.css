@@ -6,13 +6,14 @@
   --main-text-size: 18px;
 
   /* Color variables */
-  --background-decor: repeating-linear-gradient(
-    90deg,
-    #d3d3d3,
-    transparent,
-    2px
-  );
-  --bg-cards: #fff;
+  --background-decor:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --heart-fill: #ff0000;
+  --heart-sparcles: #ff0000;
+  --accent-color: #000;
+  --main-fill-color: #fff;
   --block-borders: solid 2px #000;
 
   /* Size variables */
