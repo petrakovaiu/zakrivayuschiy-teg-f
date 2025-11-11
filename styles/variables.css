@@ -14,9 +14,8 @@
   --heart-sparcles: #ff0000;
   --accent-color: #000;
   --main-fill-color: #fff;
-  --block-borders: solid 2px #000;
 
   /* Size variables */
   --main-gap: 50px;
-  --header-margin: (var(--main-gap) * 2);
+  --block-borders: solid 2px #000;
 }
