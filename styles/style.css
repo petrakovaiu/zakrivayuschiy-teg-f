@@ -203,7 +203,8 @@
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
-  @media (width <= 376px) {
+
+  @media (width <=376px) {
     inline-size: 28px;
     block-size: 28px;
   }
@@ -261,6 +262,7 @@
   inline-size: clamp(306px, 93vw, 335px);
   gap: 8px;
   line-height: 90%;
+
   @media (width <=376px) {
     flex-direction: column;
     block-size: 85px;
@@ -290,6 +292,7 @@
   padding: 30px;
   font-family: var(--accent-text-font), fantasy;
   line-height: 150%;
+
   @media (width <=376px) {
     padding: 28px 38px;
   }
@@ -309,7 +312,10 @@
 }
 
 .modal[open] .modal__text {
-  max-inline-size: 198px;
+  max-inline-size: 234px;
+  @media (width <=376px) {
+    max-inline-size: 198px;
+  }
 }
 
 .modal[open] .modal__button {
